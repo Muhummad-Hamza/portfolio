@@ -5,56 +5,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Muhammad Hamza</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Hide the SVG preview/header area and use a full-card gradient instead */
+        article > .h-40 { display: none; }
+
+        /* Apply a subtle gradient to each project card and ensure readable content */
+        article {
+            background: linear-gradient(135deg, rgba(249,115,22,0.04), rgba(14,165,233,0.03));
+        }
+
+        article .p-6 {
+            background-color: rgba(15,23,42,0.78);
+        }
+
+        /* Keep rounded corners on the inner content block */
+        article .p-6 { border-radius: 0 0 12px 12px; }
+    </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-    <div class="max-w-4xl mx-auto p-8 text-center">
-        <h1 class="text-5xl font-bold text-orange-500">My Projects</h1>
-        <p class="text-lg text-gray-400 mt-4">Here are some of the projects I have worked on.</p>
-    </div>
-    
-    <div class="max-w-4xl mx-auto p-8">
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold text-white">Typing Speed Test (HTML,CSS and JS)</h2>
-            <p class="text-gray-300 mt-2">A Web-based application to test and improve typing speed with real-time feedback.</p><br>
-            <a href="https://type-speed-pro.vercel.app" target="_blank"> -> Click Here to see demo</a>
-        </div>
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold text-white">Portfolio Website (HTML, Tailwind CSS)</h2>
-            <p class="text-gray-300 mt-2">A personal portfolio showcasing my skills, projects, and experience.</p><br>
-            <a href="https://portfolio-nine-steel-19.vercel.app/projects.html" target="_blank"> -> Click Here to see demo</a>
-
-        </div>
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold text-white">Cloning Saylani Website and Integrate Basic AI Chatbot (Dialogflow and Kommunicate , HTML, CSS, Tailwind, JS)</h2>
-            <p class="text-gray-300 mt-2">An AI chatbot built using Dialogflow and Kommunicate that interacts with users through natural language processing.</p><br>
-            <a href="https://saylani-lyart.vercel.app/" target="_blank"> -> Click Here to see demo</a>
-        </div>
-        
-
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-white"> Restaurant Website with integration of chatbot (HTML, CSS, Tailwind, JS, Dialogflow)</h2>
-            <p class="text-gray-300 mt-2">A modern, responsive design built using HTML, CSS, and Tailwind also integrate chatbot that handles faqs and interacts with users through natural language processing </p><br>
-            <a href="https://flamesbypinnacle.vercel.app/index.html" target="_blank"> -> Click Here to see demo</a>
+    <div class="max-w-6xl mx-auto px-6 py-10 sm:px-8 lg:px-12">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-bold text-orange-500">My Projects</h1>
+            <p class="text-lg text-gray-400 mt-4">A collection of web, AI, and Python projects I have built and improved over time.</p>
         </div>
 
-        <br><div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold text-white">Weather App (Python & API Integration)</h2>
-            <p class="text-gray-300 mt-2">An application that fetches real-time weather data using an API and displays it in a user-friendly interface.</p>
-        </div>
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold text-white">Robo Speaker(Python Project)</h2>
-            <p class="text-gray-300 mt-2">A simple Python-based voice assistant that speaks whatever text you enter.</p>
+        <div class="grid gap-6 md:grid-cols-2">
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-orange-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="20" y="24" width="260" height="132" rx="16" fill="#1f2937" stroke="#f97316" stroke-width="2"/>
+                            <rect x="42" y="48" width="100" height="18" rx="9" fill="#f97316"/>
+                            <rect x="42" y="78" width="180" height="12" rx="6" fill="#d1d5db"/>
+                            <rect x="42" y="100" width="140" height="12" rx="6" fill="#9ca3af"/>
+                            <circle cx="225" cy="90" r="26" fill="#f97316"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Stitch by Stitch</h2>
+                    <p class="mt-2 text-gray-300">A polished web project focused on clean layout, strong visual design, and a smooth user experience.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Web Design</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Frontend</span>
+                        </div>
+                    </div>
+                    <a href="https://stitch-by-stitch.vercel.app/" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-cyan-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="28" y="32" width="244" height="116" rx="16" fill="#111827" stroke="#38bdf8" stroke-width="2"/>
+                            <rect x="48" y="56" width="84" height="14" rx="7" fill="#38bdf8"/>
+                            <rect x="48" y="82" width="160" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="102" width="120" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">CodeMapr</h2>
+                    <p class="mt-2 text-gray-300">A modern project that highlights a clean interface and well-structured visual hierarchy.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Frontend</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">UI</span>
+                        </div>
+                    </div>
+                    <a href="https://codemapr.vercel.app/" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-emerald-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#34d399" stroke-width="2"/>
+                            <rect x="56" y="54" width="96" height="14" rx="7" fill="#34d399"/>
+                            <rect x="56" y="84" width="168" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="56" y="104" width="132" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Hamza Cricket Academy</h2>
+                    <p class="mt-2 text-gray-300">A professional website crafted for a sports academy with a clean and engaging presentation.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Website</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Landing Page</span>
+                        </div>
+                    </div>
+                    <a href="https://hamza-cricket-academy.vercel.app/" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-purple-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#a78bfa" stroke-width="2"/>
+                            <rect x="48" y="56" width="92" height="14" rx="7" fill="#a78bfa"/>
+                            <rect x="48" y="84" width="156" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="104" width="112" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Caklora</h2>
+                    <p class="mt-2 text-gray-300">A polished website project with a strong focus on presentation, clarity, and user-friendly design.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Frontend</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Design</span>
+                        </div>
+                    </div>
+                    <a href="https://caklora-ten.vercel.app/" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-rose-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#fb7185" stroke-width="2"/>
+                            <rect x="46" y="56" width="104" height="14" rx="7" fill="#fb7185"/>
+                            <rect x="46" y="84" width="170" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="46" y="104" width="132" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Typing Speed Test</h2>
+                    <p class="mt-2 text-gray-300">A web app that helps users improve their typing speed with live feedback and a clean interface.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">HTML</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">CSS</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">JavaScript</span>
+                        </div>
+                    </div>
+                    <a href="https://type-speed-pro.vercel.app" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-yellow-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#fbbf24" stroke-width="2"/>
+                            <rect x="48" y="56" width="112" height="14" rx="7" fill="#fbbf24"/>
+                            <rect x="48" y="84" width="176" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="104" width="128" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Restaurant Website with Chatbot</h2>
+                    <p class="mt-2 text-gray-300">A modern restaurant landing page with chatbot support that helps visitors with common questions.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">HTML</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Tailwind</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Dialogflow</span>
+                        </div>
+                    </div>
+                    <a href="https://flamesbypinnacle.vercel.app/index.html" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-blue-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#60a5fa" stroke-width="2"/>
+                            <rect x="48" y="56" width="108" height="14" rx="7" fill="#60a5fa"/>
+                            <rect x="48" y="84" width="176" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="104" width="132" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Saylani Website Clone with AI Chatbot</h2>
+                    <p class="mt-2 text-gray-300">A recreated website with chatbot integration using Dialogflow and Kommunicate for natural user interaction.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">HTML</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Tailwind</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">AI Chatbot</span>
+                        </div>
+                    </div>
+                    <a href="https://saylani-lyart.vercel.app/" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-indigo-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#818cf8" stroke-width="2"/>
+                            <rect x="48" y="56" width="96" height="14" rx="7" fill="#818cf8"/>
+                            <rect x="48" y="84" width="168" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="104" width="132" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Portfolio Website</h2>
+                    <p class="mt-2 text-gray-300">A personal portfolio designed to present my work, experience, and creative projects in a simple layout.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">HTML</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <a href="https://portfolio-nine-steel-19.vercel.app/projects.html" target="_blank" class="mt-5 inline-block rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white transition hover:bg-orange-600">Live Demo</a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-sky-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#38bdf8" stroke-width="2"/>
+                            <rect x="48" y="56" width="102" height="14" rx="7" fill="#38bdf8"/>
+                            <rect x="48" y="84" width="170" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="104" width="128" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Weather App</h2>
+                    <p class="mt-2 text-gray-300">A simple app that fetches real-time weather data and presents it in an easy-to-read format.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Python</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">API</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500">
+                <div class="h-40 bg-gradient-to-br from-lime-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#84cc16" stroke-width="2"/>
+                            <rect x="48" y="56" width="94" height="14" rx="7" fill="#84cc16"/>
+                            <rect x="48" y="84" width="176" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="104" width="128" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Robo Speaker</h2>
+                    <p class="mt-2 text-gray-300">A Python project that converts user input into speech using text-to-speech functionality.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg transition hover:-translate-y-1 hover:border-orange-500 md:col-span-2">
+                <div class="h-40 bg-gradient-to-br from-fuchsia-500/20 via-gray-700 to-gray-900 p-4">
+                    <div class="flex h-full items-center justify-center rounded-xl border border-white/10 bg-gray-900/70">
+                        <svg viewBox="0 0 300 180" class="h-full w-full rounded-xl">
+                            <rect x="24" y="24" width="252" height="132" rx="16" fill="#111827" stroke="#d946ef" stroke-width="2"/>
+                            <rect x="48" y="56" width="112" height="14" rx="7" fill="#d946ef"/>
+                            <rect x="48" y="84" width="176" height="10" rx="5" fill="#e5e7eb"/>
+                            <rect x="48" y="104" width="140" height="10" rx="5" fill="#9ca3af"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-white">Notepad App</h2>
+                    <p class="mt-2 text-gray-300">A desktop text editor built with Python and Tkinter that supports creating, editing, and saving files.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-sm font-medium text-gray-400">Tech stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Python</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm text-gray-200">Tkinter</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
 
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold text-white">Notepad App (Python + Tkinter)</h2>
-            <p class="text-gray-300 mt-2">A desktop text editor built using Python Tkinter library. Supports creating, opening, editing, and saving files with a clean and user-friendly interface.</p>
+        <div class="text-center mt-10">
+            <a href="index.html" class="inline-block px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition">Back to Home</a>
         </div>
-
-    </div>
-    
-    <div class="max-w-4xl mx-auto p-8 text-center">
-        <a href="index.html" class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition">Back to Home</a>
     </div>
 </body>
 </html>
