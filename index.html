@@ -6,31 +6,64 @@
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
-    <main class="flex-grow flex items-center justify-center px-6 py-12">
-        <div class="max-w-4xl text-center">
-            <h1 class="text-4xl sm:text-6xl font-bold leading-tight">Hi! I'm <span class="text-orange-500">Muhammad Hamza</span></h1>
-            <p class="text-lg text-gray-400 mt-4">A Computer Science Student & Developer who builds creative web and AI projects.</p>
-            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="about.html" class="inline-block px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition">More About Me</a>
-                <a href="projects.html" class="inline-block px-6 py-3 border border-orange-500 text-orange-500 font-semibold rounded-lg hover:bg-orange-500 hover:text-white transition">View Projects</a>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] h-72 w-72 rounded-full bg-orange-500/20 blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] h-80 w-80 rounded-full bg-cyan-500/20 blur-3xl animate-pulse"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.08),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(34,211,238,0.08),_transparent_30%)]"></div>
+    </div>
+
+    <header class="relative z-20 px-4 pt-4 sm:px-6 lg:px-8">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between sm:justify-center relative rounded-lg sm:rounded-full border border-white/10 bg-gradient-to-r from-gray-900/60 via-gray-950/50 to-gray-900/50 px-4 py-2 sm:py-3 shadow-lg shadow-black/30 backdrop-blur-md">
+            <div class="flex items-center">
+                <a href="index.html" class="sr-only">Home</a>
+            </div>
+
+            <div class="hidden sm:flex sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 items-center gap-8 text-sm text-gray-300">
+                <a href="index.html" class="px-4 py-2 rounded-full text-white/90 hover:text-white transition hover:bg-white/5">Home</a>
+                <a href="about.html" class="px-4 py-2 rounded-full text-gray-300 hover:text-orange-400 transition hover:bg-orange-500/5">About</a>
+                <a href="projects.html" class="px-4 py-2 rounded-full text-gray-300 hover:text-orange-400 transition hover:bg-orange-500/5">Projects</a>
+                <a href="contact.html" class="px-4 py-2 rounded-full text-gray-300 hover:text-orange-400 transition hover:bg-orange-500/5">Contact</a>
+            </div>
+
+            <div class="sm:hidden relative">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="cursor-pointer text-2xl text-gray-200">☰</label>
+                <div class="hidden absolute right-4 top-14 w-52 rounded-2xl border border-white/8 bg-gray-900/95 p-4 text-center shadow-xl" id="menu">
+                    <a href="index.html" class="block py-2 hover:text-orange-500">Home</a>
+                    <a href="about.html" class="block py-2 hover:text-orange-500">About</a>
+                    <a href="projects.html" class="block py-2 hover:text-orange-500">Projects</a>
+                    <a href="contact.html" class="block py-2 hover:text-orange-500">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative z-10 flex-grow flex items-center justify-center px-6 py-10 sm:py-12">
+        <div class="max-w-5xl w-full rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-xl sm:p-12">
+            <p class="text-sm uppercase tracking-[0.35em] text-orange-400">Portfolio</p>
+            <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-6xl">Hi! I'm <span class="text-orange-500">Muhammad Hamza</span></h1>
+            <p class="mx-auto mt-5 max-w-2xl text-lg text-gray-300">A Computer Science Student & Developer who builds creative web experiences and AI-powered projects with a focus on clean design and practical solutions.</p>
+            <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <a href="about.html" class="inline-block rounded-full bg-orange-500 px-7 py-3 font-semibold text-white shadow-lg shadow-orange-500/20 transition hover:-translate-y-1 hover:bg-orange-600">More About Me</a>
+                <a href="projects.html" class="inline-block rounded-full border border-orange-500 px-7 py-3 font-semibold text-orange-400 transition hover:-translate-y-1 hover:bg-orange-500 hover:text-white">View Projects</a>
+            </div>
+            <div class="mt-8 flex flex-wrap justify-center gap-2">
+                <span class="rounded-full border border-white/10 bg-white/10 px-3 py-2 text-sm text-gray-200">HTML</span>
+                <span class="rounded-full border border-white/10 bg-white/10 px-3 py-2 text-sm text-gray-200">CSS</span>
+                <span class="rounded-full border border-white/10 bg-white/10 px-3 py-2 text-sm text-gray-200">Tailwind</span>
+                <span class="rounded-full border border-white/10 bg-white/10 px-3 py-2 text-sm text-gray-200">Python</span>
+                <span class="rounded-full border border-white/10 bg-white/10 px-3 py-2 text-sm text-gray-200">AI Chatbots</span>
             </div>
         </div>
     </main>
     
-    <div class="fixed top-4 left-4 z-50">
-        <input type="checkbox" id="menu-toggle" class="hidden">
-        <label for="menu-toggle" class="cursor-pointer text-2xl">☰</label>
-        <div class="hidden absolute top-10 left-0 w-48 bg-gray-800 p-4 space-y-2 text-center rounded-lg shadow-lg" id="menu">
-            <a href="about.html" class="block py-2 hover:text-orange-500">About</a>
-            <a href="projects.html" class="block py-2 hover:text-orange-500">Projects</a>
-            <a href="contact.html" class="block py-2 hover:text-orange-500">Contact</a>
-        </div>
-    </div>
-    
     <style>
         #menu-toggle:checked ~ #menu {
             display: block;
+        }
+        @media (min-width: 640px) {
+            nav a[aria-current="true"]{color:var(--tw-text-opacity);}
         }
     </style>
 
